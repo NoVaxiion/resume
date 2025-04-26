@@ -1,6 +1,7 @@
 """
 Autofill Chrome form fields based on OCR-detected field labels, using trained model predictions.
 
+JUST KNOW MY (KENNETH's) INFORMATION IS HARDCODED AT THE MOMENT
 YOU CAN IGNORE THE WARNING AAS WE'RE ONLY PREDICTING THE TEXT
 """
 
