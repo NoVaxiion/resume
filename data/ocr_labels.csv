@@ -1,0 +1,355 @@
+field_text,predicted_label,target_label
+How Did You Hear About Us?,referral_source,referral_source
+Country ,country,country
+Name,full_name,full_name
+First Name,first_name,first_name
+Last Name,last_name,last_name
+Address,address,Address
+Address Line 1,address,address
+City,city,city
+State,state,state
+Postal Code,zipcode,zipcode
+Phone,phone_number,phone_number
+Phone Device Type,phone_number,phone_number
+Country Phone Code,phone_number,phone_number
+Phone Number,phone_number,phone_number
+Skills,skills,skills
+Type to Add Skills,skills,skills
+Work Experience,experience,Experience
+Education,education,education
+Work Experience 1,experience,experience
+Job Title,position,position
+Company,company,company
+Location,city,city
+I currently work here,status,status
+From,from,from
+[MM/YYYY],date,date
+Role Description,dropdown_generic,dropdown_generic
+To,accept_terms,accept_terms
+"Do you now, or will you ever, require sponsorship to work in the Country where the job is located?",dropdown_generic,dropdown_generic
+"Do you now work or have you ever worked at or for Carrier or any of its businesses in any capacity, either as an employee or non-employee? (Non-employees include contractors, agency temporary workers, trainees, apprentices or managed services providers) ",dropdown_generic,dropdown_generic
+"Do you now, or will you ever, require sponsorship to work in the Country where the job is located? ",dropdown_generic,dropdown_generic
+"Do you now work or have you ever worked at or for Carrier or any of its businesses in any capacity, either as an employee or non-employee? (Non-employees include contractors, agency temporary workers, trainees,
+apprentices or managed services providers)",dropdown_generic,dropdown_generic
+Are you a protected veteran? (Veteran status definitions can be found in the instructions above) ,dropdown_generic,dropdown_generic
+Terms and Conditions,accept_terms,accept_terms
+"Privacy Disclaimer 1. To give me more opportunities to be considered for a job, I understand that Carrier, while being committed to protect personal information of all job applicants, is a global company and therefore shares job applicant
+information across its business and across countries. I understand that the personal information I submit may be
+reviewed by Carrier, its affiliated companies and its service providers to consider me for additional opportunities
+to which I may be invited to apply.
+Please consult the Carrier Job Applicant Privacy Notice for more detailed information.
+2. I confirm I will not provide any personal information regarding another person without first obtaining that
+person's consent and will supply proof of consent to Carrier upon request.
+3. I understand that my personal data is being kept in the portal for two (2) years after creating my profile, unless
+I'm located in a country where a shorter retention period applies. If I applied for a job through this portal during
+he running retention period, a new retention period will start as from that moment. I can ask for an earlier
+deletion of my data at any time, via the My Account section in the candidate home portal.",dropdown_generic,dropdown_generic
+"Yes, I have read and consent to the terms and conditions",accept_terms,accept_terms
+Language,langauge,langauge
+Voluntary Self-Identification of Disability,disbility,disbility
+Name,full_name,full_name
+Date,date,date
+MM/DD/YYYY,date,date
+Please check one of the boxes below:,dropdown_generic,dropdown_generic
+"Yes, I have a disability, or have had one in the past",disbility,disbility
+"No, I do not have a disability and have not had one in the past",disbility,disbility
+"Yes, I have a disability, or have had one in the past",dropdown_generic,dropdown_generic
+"No, I do not have a disability and have not had one in the past",dropdown_generic,dropdown_generic
+First Name ,first_name,first_name
+Last Name ,last_name,last_name
+Email,email,email
+Phone ,phone_number,phone_number
+LinkedIn Profile,linkedin_profile,linkedin
+Website,portfolio_link,portfolio_link
+"Do you have any first-degree relatives (spouse, parent, child, sibling) that are currently employed by NICE or any of its subsidiaries? ",dropdown_generic,dropdown_generic
+Have you ever worked at NICE or any of it's subsidiaries? ,dropdown_generic,dropdown_generic
+Are you willing to come into the office two days a week on a flex-hybrid schedule? ,dropdown_generic,dropdown_generic
+What is your desired hourly rate? ,dropdown_generic,dropdown_generic
+Do you now or in the future require visa sponsorship?,dropdown_generic,dropdown_generic
+Do you current live in the SLC Metro (Ogden-Provo) area? ,dropdown_generic,dropdown_generic
+Are you willing to work 20 hrs a week for 12-18 months?,dropdown_generic,dropdown_generic
+Gender,dropdown_generic,dropdown_generic
+Are you Hispanic/Latino?,dropdown_generic,dropdown_generic
+Veteran Status,dropdown_generic,dropdown_generic
+Disability Status,dropdown_generic,dropdown_generic
+How Did You Hear About Us?,referral_source,referral_source
+Country ,country,country
+First Name,first_name,first_name
+Last Name,last_name,last_name
+Address Line 1,address,address
+City,city,city
+State,state,state
+Postal Code,zipcode,zipcode
+Email Address,email,email
+Phone Device Type,phone_number,phone_number
+Country Phone Code,phone_number,phone_number
+Phone Number,phone_number,phone_number
+Phone Extension,phone_number,phone_number
+Job Title,position,position
+Company,company,company
+Location,city,city
+I currently work here,status,status
+From?,from,from
+Role Description,description,description
+Role Description,description,description
+Job Title,position,position
+Company,company,company
+Company,company,company
+Location,city,city
+I currently work here,status,status
+From,from,from
+To,to,to
+Role Description,description,description
+School or University ,education,education
+Degree,degree,degree
+Field of Study,major,major
+From,from,from
+To (Actual or Expected),to,to
+Type to Add Skills,skills,skills
+URL,portfolio_link,portfolio_link
+URL,portfolio_link,portfolio_link
+"Do you now, or will you ever, require sponsorship to work in the Country where the job is located?",dropdown_generic,dropdown_generic
+"Do you now, or will you ever, require sponsorship to work in the Country where the job is located?",dropdown_generic,dropdown_generic
+"Do you now work or have you ever worked at or for Carrier or any of its businesses in any capacity, either as an employee or non-employee? (Non-employees include contractors, agency temporary workers, trainees,
+apprentices or managed services providers) ",dropdown_generic,dropdown_generic
+Are you a protected veteran? (Veteran status definitions can be found in the instructions above),veteran,veteran
+"Yes, I have read and consent to the terms and conditions",accept_terms,accept_terms
+Language,langauge,langauge
+Name,full_name,full_name
+Date,date,date
+Please check one of the boxes below:,dropdown_generic,dropdown_generic
+How Did You Hear About Us?,referral_source,referral_source
+Country,country,country
+Country,country,country
+First Name,first_name,first_name
+Last Name,last_name,last_name
+Address Line 1,address,address
+City,city,city
+State,state,state
+Email Address,email,email
+Phone Device Type,phone_number,phone_number
+Phone Device Type,phone_number,phone_number
+Country Phone Code,phone_number,phone_number
+Country Phone Code,phone_number,phone_number
+Phone Number,phone_number,phone_number
+Have you ever Applied for Work at Cadence?,dropdown_generic,dropdown_generic
+Have you ever Worked at Cadence? ,dropdown_generic,dropdown_generic
+Are you legally authorized to work in the country in which this job is located?,dropdown_generic,dropdown_generic
+Will you require Immigration Support to maintain work authorization,dropdown_generic,dropdown_generic
+"name (i.e., maiden name)Please list if you have ever worked under or earned degrees or professional certifications under another",dropdown_generic,dropdown_generic
+"Please list if you have ever worked under or earned degrees or professional certifications under another name (i.e., maiden name)",dropdown_generic,dropdown_generic
+Do you have any relatives employed at Cadence?,dropdown_generic,dropdown_generic
+Do you have any commitments to another employer or organization which might interfere with our affect your employment with us? ,dropdown_generic,dropdown_generic
+Please select the ethnicity which most accurately describes how you identify yourself.,dropdown_generic,dropdown_generic
+Do you identify as Hispanic or Latino?,dropdown_generic,dropdown_generic
+Please select your gender.,dropdown_generic,dropdown_generic
+"Yes, I have read and consent to the terms and conditions",accept_terms,accept_terms
+"Yes, I have read and consent to the terms and conditions",accept_terms,accept_terms
+Language,langauge,langauge
+Name,full_name,full_name
+Date,date,date
+Please check one of the boxes below:,dropdown_generic,dropdown_generic
+First Name,first_name,first_name
+Last Name,last_name,last_name
+Email,email,email
+Email,email,email
+Phone Number,phone_number,phone_number
+Location,city,city
+Personal Website,portfolio_link,portfolio_link
+LinkedIn Profile,linkedin_profile,linkedin
+LinkedIn Profile,linkedin_profile,linkedin
+How did you hear about this job?,country,country
+Why do you want to work for Acorns?,dropdown_generic,dropdown_generic
+"Will you now or in the future require sponsorship for employment visa status? (this includes Curricular Practical Training (CPT), Optional Practical Training (OPT), F1-Visa program, and other visa sponsorships)",dropdown_generic,dropdown_generic
+What is your preferred engineering specialization? (This will not impact your candidacy and is only used for program team assignments),dropdown_generic,dropdown_generic
+Do you graduate between December 2025 - June 2026?,dropdown_generic,dropdown_generic
+What is your current age?,dropdown_generic,dropdown_generic
+What is your gender identity?,dropdown_generic,dropdown_generic
+What is your gender identity?,dropdown_generic,dropdown_generic
+Do you identify as transgender?,dropdown_generic,dropdown_generic
+How do you identify your sexual orientation? Please select all that apply.,submit_button,submit_button
+Which ethnicity(ies) do you identify with? Please select all that apply.,submit_button,submit_button
+Which of the following communities do you belong to? Please select all that apply.,submit_button,submit_button
+Gender,gender,gender
+First Name,first_name,first_name
+Last Name,last_name,last_name
+Email,email,email
+Phone,phone_number,phone_number
+Location (City),city,city
+School,education,education
+Degree,degree,degree
+LinkedIn Profile,linkedin_profile,linkedin_profile
+How much did content from the DoorDash Engineering blog influence your decision to apply for a role at DoorDash? ,submit_button,submit_button
+Are you currently authorized to work lawfully in the U.S.?,dropdown_generic,dropdown_generic
+Will you now or in the future require employment-based visa sponsorship?,dropdown_generic,dropdown_generic
+Have you worked at DoorDash?,dropdown_generic,dropdown_generic
+Applicant Privacy Acknowledgement,dropdown_generic,dropdown_generic
+"We would like to contact you via SMS or WhatsApp to provide updates on your progress. Mark yes if you agree. If you mark no, we will contact you via the email you provided. ",dropdown_generic,dropdown_generic
+Select all locations you would be open to being placed for an in-person internship,dropdown_generic,dropdown_generic
+Please select your top preferred location,dropdown_generic,dropdown_generic
+Have you previously completed at least 1 internship or have relevant full-time experience?,dropdown_generic,dropdown_generic
+Please indicate your most recent GPA,dropdown_generic,dropdown_generic
+Please select and confirm your anticipated graduation date,dropdown_generic,dropdown_generic
+Gender ,dropdown_generic,dropdown_generic
+Do you identify as transgender? (Select one),dropdown_generic,dropdown_generic
+Are you Hispanic or Latinx? (Select one) ,dropdown_generic,dropdown_generic
+Race,dropdown_generic,dropdown_generic
+Protected Veteran Status (Select one),dropdown_generic,dropdown_generic
+Protected Veteran Status (Select one),dropdown_generic,dropdown_generic
+Disability Status (Select one),dropdown_generic,dropdown_generic
+Legal First Name,first_name,first_name
+Legal Last Name,last_name,last_name
+Legal Last Name,last_name,last_name
+Phone Number,phone_number,phone_number
+Contact Phone Type,phone_number,phone_number
+Country/Region of Residence,country,country
+Email,email,email
+When are you available to start an internship?,dropdown_generic,dropdown_generic
+How many months are you available to participate in an internship?,dropdown_generic,dropdown_generic
+Are you available to work full-time or part-time as part of an internship?,dropdown_generic,dropdown_generic
+Do you need to write a thesis or report for your university as part of your internship?,dropdown_generic,dropdown_generic
+What is your availability or notice period?,dropdown_generic,dropdown_generic
+I authorize Tesla to consider me for other job opportunities for the next 36 months within Tesla in addition to the specific job I am applying for.,dropdown_generic,accept_terms
+Will you now or in the future require immigration sponsorship for employment with Tesla?,dropdown_generic,dropdown_generic
+Have you previously been employed by Tesla?,dropdown_generic,dropdown_generic
+Are you a former/current intern or contractor?,dropdown_generic,dropdown_generic
+Are you a current university student?,dropdown_generic,dropdown_generic
+"Do you consent to receiving text messages throughout your application process including but not limited to interview details, pre-employment screening notifications and reminders?",accept_terms,accept_terms
+First name ,first_name,first_name
+First name ,first_name,first_name
+Last name ,last_name,last_name
+Phone number,phone_number,phone_number
+Email address,email,email
+Address line 1,address,address
+Address line 2,address,address
+City,city,city
+Postal/Zip code,zipcode,zipcode
+Province/State,state,state
+Country/Region,country,country
+Country/Region,country,country
+Are you willing to relocate?,dropdown_generic,dropdown_generic
+How did you hear about this role?,referral_source,referral_source
+"If ""Other"" please specify",dropdown_generic,dropdown_generic
+Education level ,education,education
+School name,college,college
+Area(s) of study,dropdown_generic,dropdown_generic
+Are you currently a student?,dropdown_generic,dropdown_generic
+Expected graduation date,dropdown_generic,dropdown_generic
+Do you have 3+ years of relevant non-internship professional experience?,dropdown_generic,dropdown_generic
+"By checking this box, I confirm I acknowledge the above.",dropdown_generic,dropdown_generic
+What is your gender?,dropdown_generic,dropdown_generic
+"If you believe you belong to any of the categories of protected veterans listed below, please indicate by checking the appropriate box. ",dropdown_generic,dropdown_generic
+Are you a Military spouse?,dropdown_generic,dropdown_generic
+Are you currently a member of the U.S. National Guard or Reserves?,dropdown_generic,dropdown_generic
+Are you a veteran?,dropdown_generic,dropdown_generic
+Please check one of the boxes,dropdown_generic,dropdown_generic
+Your name,full_name,full_name
+Today's date,date,date
+First Name,first_name,first_name
+Last Name,last_name,last_name
+Last Name,last_name,last_name
+Primary Email,email,email
+Primary Email,email,email
+Number,phone_number,phone_number
+"I authorize Spectrum to contact me about my application, career opportunities and events via text messaging.  I further understand that if I no longer want Spectrum to contact me via text messaging, I  can opt out by updating my Candidate Profile",accept_terms,accept_terms
+Address,Address,address
+City,city,city
+Zip/Postal Code,zipcode,zipcode
+Country,country,country
+State/Province,state,state
+State/Province,state,state
+School,college,college
+Other School,college,college
+Other School,college,college
+Degree,degree,degree
+Degree,degree,degree
+Did You Graduate?,dropdown_generic,dropdown_generic
+Did You Graduate?,dropdown_generic,dropdown_generic
+Major,dropdown_generic,dropdown_generic
+Employer,employer,employer
+Title,position,position
+State,state,state
+Start Date (Month / Day / Year),country,country
+End Date (Month / Day / Year),dropdown_generic,dropdown_generic
+Description,employer,employer
+Is this your current employer?,dropdown_generic,dropdown_generic
+WOTC Acknowledgement,dropdown_generic,dropdown_generic
+WOTC Acknowledgement,dropdown_generic,dropdown_generic
+"Once you have completed your review, please select “I agree” below, confirming that you have read and understand the Mutual Arbitration Agreement and agree to be bound by the same.",dropdown_generic,accept_terms
+What university are you currently enrolled in?,dropdown_generic,dropdown_generic
+What degree are you currently pursuing?,dropdown_generic,dropdown_generic
+Do you have a GPA of 3.0 or higher?,dropdown_generic,dropdown_generic
+Last Name,last_name,last_name
+Email,email,email
+Phone,phone_number,phone_number
+Location (City),city,city
+First Name,first_name,first_name
+Last Name ,last_name,last_name
+Email,email,email
+Phone,phone_number,phone_number
+Location (City),city,city
+School,college,college
+Degree,degree,degree
+Discipline,major,major
+School,college,college
+Degree,degree,degree
+Discipline,major,major
+LinkedIn Profile,linkedin_profile,linkedin_profile
+How did you hear about this job?,country,country
+"Yes, I can work onsite in the Boca Raton, FL headquarters.",accept_terms,accept_terms
+"No, I am seeking a remote internship opportunity.",accept_terms,accept_terms
+"If you are currently employed in a medical practice setting, does your current employer utilize one of our products such as EMA® and/or gGastro® EHR in their medical practice? ",dropdown_generic,dropdown_generic
+Do you have academic/professional experience with Swift?,dropdown_generic,dropdown_generic
+Do you have experience with Mobil Application Development?,dropdown_generic,dropdown_generic
+Do you have iOS experience through academia or professional experience?,dropdown_generic,dropdown_generic
+What is the highest level of education you've achieved?,education,education
+When is your expected graduation date?,dropdown_generic,dropdown_generic
+"Do you have any relatives or close personal relationships who are currently employed and/or in consideration for employment by Modernizing Medicine or its affiliates, including Klara
+Technologies? *Relatives are defined as all family members: an employee’s parent, child, spouse,
+brother, sister, grandparent, domestic partner, aunt, uncle, niece, nephew, or cousin, including any
+step, half, in-law, or adoptive relationships within the preceding categories. **Close Personal
+Relationship includes members of the same household, even if the person is not a blood relative,
+and dating relationships, which is defined by the Company as any employee currently romanticall
+involved in a consensual relationship with another employee. ",dropdown_generic,dropdown_generic
+"If you answered ""yes"" to the previous question, please list their name(s) and relationship to you.",dropdown_generic,dropdown_generic
+"Have you entered into an agreement (such as a non-competition or non-solicitation agreement) with your current employer, or any former employer or other party, that might, in any way, restrict your
+ability to work for our company? ",dropdown_generic,dropdown_generic
+Are you legally authorized to work in the US?,dropdown_generic,dropdown_generic
+"Do you now, or will you in the future, require immigration sponsorship for work authorization (for example, H-1B status)?",dropdown_generic,dropdown_generic
+"ACKNOWLEDGEMENT: The information that I am submitting in this application is true and correct. I understand that in the event of my employment by the Company, I shall be subject to dismissal if
+any information that I have given in this application is false or misleading or if I have failed to give
+any information herein requested, regardless of the time elapsed after discovery. I authorize the
+Company to inquire into my educational, professional and past employment history and references
+as needed to research my qualifications for this position. I hereby give my consent to any former
+employer to provide employment-related information about me to the Company and will hold the
+Company and my former employer harmless from any claim made on the basis that such information
+about me was provided or that any employment decision was made on the basis of such
+information. I further authorize the Company to obtain any credit and consumer check. I hereby
+grant the Company, a limited license and right to use, store and process all of the information and
+data that I have provided or posted in this application, including my resume and other
+documentation submitted (""Information""), and the right to sublicense this Information to third parties
+who may have access to this information and data for purposes of assisting the Company in its
+recruiting and hiring efforts and activities, and/or who host, operate or otherwise perform on the
+Company's recruiting websites, including this site. I hereby represent to the Company that any
+Information does not violate the privacy rights, publicity rights, copyrights, contract rights,
+intellectual property rights, or any other rights of any person. If I am a California resident, I hereby
+acknowledge and agree that I have received and had an opportunity to review the Privacy Notice for
+California Residents Seeking Employment with Modernizing Medicine, Inc., (available here). I agree
+to indemnify, defend and hold the Company harmless from any third party claim, action, suit or
+proceeding arising out of or resulting from the Information. I understand that nothing in this
+employment application, the granting of an interview or my subsequent employment with the
+Company is intended to create an employment contract between myself and the Company under
+which my employment could be terminated only for cause. If employed, I will be required to provide
+original documents which verify my identity and right to work in the United States under the
+Immigration Reform and Control Act (IRCA) of 1986. The document(s) provided will be used for
+completion of Form I-9.  BY TYPING MY FULL NAME BELOW, I hereby acknowledge that I have
+read and understand the above and I agree to the above terms in their entirety.",dropdown_generic,resume_upload
+Today's Date (use MM/DD/YYYY format),date,date
+Gender,gender,gender
+Are you Hispanic/Latino?,hispanic,hispanic
+Veteran Status,veteran,veteran
+Disability Status,disbility,disbilityFirst Name’,
+First Name’,
+First Name,
+First Name,
+for epoch in range(epochs),
