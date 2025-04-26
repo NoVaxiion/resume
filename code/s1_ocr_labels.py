@@ -15,7 +15,7 @@ import os
 WATCHED_FOLDER = '/Users/novaxion/Desktop/Screenshots'
 
 #Path to save labeled data
-OUTPUT_CSV = 'ocr_labels.csv'
+OUTPUT_CSV = '../data/ocr_labels.csv'
 
 #Initialize CSV if it doesn't exist
 if not os.path.exists(OUTPUT_CSV):

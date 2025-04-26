@@ -1,4 +1,5 @@
 """
+DATA MUST BE CLEANED FIRST
 Train the field label prediction model using Keras TextVectorization and save the model, label encoder, and vectorizer vocabulary.
 """
 
@@ -11,7 +12,8 @@ import pandas as pd
 import pickle
 
 #Load cleaned dataset
-data = pd.read_csv('ocr_labels.csv')
+data = pd.read_csv('../data/ocr_labels.csv')
+
 
 #Prepare the data
 data = data[data['target_label'].notnull() & (data['target_label'].str.strip() != '')]
@@ -23,7 +25,7 @@ label_encoder = LabelEncoder()
 y_encoded = label_encoder.fit_transform(y)
 
 #Save the label encoder
-with open('label_encoder.pkl', 'wb') as f:
+with open('../models/label_encoder.pkl', 'wb') as f:
     pickle.dump(label_encoder, f)
 
 #Split into training and validation
@@ -35,7 +37,7 @@ vectorizer.adapt(X_train)
 
 #Save the vectorizer vocabulary
 vocab = vectorizer.get_vocabulary()
-with open('vectorizer_vocab.pkl', 'wb') as f:
+with open('../models/vectorizer_vocab.pkl', 'wb') as f:
     pickle.dump(vocab, f)
 
 #Vectorize training data
@@ -70,6 +72,6 @@ history = model.fit(
 )
 
 #Save the model
-model.save('field_classifier_model.h5')
+model.save('../models/field_classifier_model.h5')
 
 print("Model, Label Encoder, and Vectorizer vocabulary saved successfully.")

@@ -1,27 +1,29 @@
 """
 Autofill Chrome form fields based on OCR-detected field labels, using trained model predictions.
+
+YOU CAN IGNORE THE WARNING AAS WE'RE ONLY PREDICTING THE TEXT
 """
 
-import time
-import pickle
-import numpy as np
-import tensorflow as tf
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 from tensorflow.keras.layers import TextVectorization
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium import webdriver
+import tensorflow as tf
+import numpy as np
+import pickle
+import time
 
 #Load the trained model
-model = tf.keras.models.load_model('field_classifier_model.h5')
+model = tf.keras.models.load_model('../models/field_classifier_model.h5')
 
 #Load label encoder
-with open('label_encoder.pkl', 'rb') as f:
+with open('../models/label_encoder.pkl', 'rb') as f:
     label_encoder = pickle.load(f)
 
 #Load vectorizer vocabulary and rebuild vectorizer
-with open('vectorizer_vocab.pkl', 'rb') as f:
+with open('../models/vectorizer_vocab.pkl', 'rb') as f:
     vocab = pickle.load(f)
 
 vectorizer = TextVectorization(max_tokens=5000, output_mode='int', output_sequence_length=20)
@@ -51,9 +53,7 @@ def predict_field(field_text):
     return pred_label
 
 #Ask user for URL
-url = input("Enter the URL to autofill (leave blank for default Acorns URL): ").strip()
-if not url:
-    url = "https://jobs.ashbyhq.com/Acorns/784f0838-8389-4dfc-add0-6531c571abae/application"
+url = input("Enter the URL to autofill: ").strip()
 
 #Launch Chrome
 options = Options()
