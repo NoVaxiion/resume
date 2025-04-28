@@ -47,8 +47,6 @@ if __name__ == "__main__":
         "Postal Code",
         "Country",
         "Submit Application",
-        "Authorization to work in the US",
-        "Preferred Language"
     ]
 
     predictions = batch_predict(fields_to_predict)
