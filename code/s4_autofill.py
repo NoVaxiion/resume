@@ -28,7 +28,7 @@ import re
 
 
 
-# —— Load ML model & components —— #
+#Load ML model & components
 model = tf.keras.models.load_model('../models/field_classifier_model.h5')
 with open('../models/label_encoder.pkl', 'rb') as f:
     label_encoder = pickle.load(f)
@@ -41,9 +41,9 @@ vectorizer = TextVectorization(
 )
 vectorizer.set_vocabulary(vocab)
 
-# —— Prompt for résumé path & extract text —— #
+#Prompt for résumé path & extract text
 resume_path = input("Enter the absolute path to your résumé PDF: ").strip()
-# Read all pages into a list of strings
+#Read all pages into a list of strings
 page_texts = []
 with pdfplumber.open(resume_path) as pdf:
     for page in pdf.pages:
@@ -54,8 +54,8 @@ with pdfplumber.open(resume_path) as pdf:
 # Join pages into full_text
 full_text = "\n".join(page_texts)
 
-# —— Parse header: Name, Location, Email, Phone, LinkedIn —— #
-# Build lines list without list comprehension
+#Parse header: Name, Location, Email, Phone, LinkedIn
+#Build lines list without list comprehension
 lines = []
 for raw_line in full_text.splitlines():
     stripped = raw_line.strip()
@@ -73,7 +73,7 @@ linkedin = ""
 
 if len(lines) > 1:
     header_parts = lines[1].split('|')
-    # Clean and assign
+    #Clean and assign
     if len(header_parts) > 0:
         location = header_parts[0].strip()
     if len(header_parts) > 1:
@@ -82,10 +82,10 @@ if len(lines) > 1:
         phone = header_parts[2].strip()
     if len(header_parts) > 3:
         linkedin = header_parts[3].strip()
-# Normalize LinkedIn
+#Normalize LinkedIn
 if linkedin and not linkedin.startswith('http'):
     linkedin = 'https://' + linkedin
-# Split city and state
+#Split city and state
 city = ''
 state = ''
 if location:
@@ -94,7 +94,7 @@ if location:
     if len(parts) > 1:
         state = parts[1].strip()
 
-# —— Section parsing for full résumé —— #
+#Section parsing for full resume
 raw_lines = full_text.splitlines()
 section_titles = set([
     "SKILLS",
@@ -114,7 +114,7 @@ for raw_line in raw_lines:
     elif current_section:
         if raw_line.strip():
             sections[current_section].append(raw_line.strip())
-# Convert lists to strings without comprehensions
+#Convert lists to strings without comprehensions
 skills_lines = []
 education_lines = []
 projects_lines = []
@@ -139,7 +139,7 @@ if 'WORK EXPERIENCE' in sections:
 if 'LEADERSHIP AND ENGAGEMENT' in sections:
     for item in sections['LEADERSHIP AND ENGAGEMENT']:
         lead_lines.append(item)
-# Join lines into text
+#Join lines into text
 skills_text = ' ; '.join(skills_lines)
 education_text = ' | '.join(education_lines)
 projects_text = ' | '.join(projects_lines)
@@ -147,7 +147,7 @@ tech_text = ' | '.join(tech_lines)
 work_text = ' | '.join(work_lines)
 lead_text = ' | '.join(lead_lines)
 
-# —— Build personal_info dict —— #
+#Build personal_info dict
 personal_info = {
     "full_name":            full_name,
     "first_name":           full_name.split()[0] if full_name else "",
@@ -171,7 +171,7 @@ personal_info = {
     "leadership":           lead_text
 }
 
-# —— Heuristic override before ML —— #
+#Heuristic override before ML
 def heuristic_label(elem):
     typ = (elem.get_attribute('type') or '').lower()
     nm  = (elem.get_attribute('name') or '').lower()
@@ -204,7 +204,7 @@ def heuristic_label(elem):
         return 'leadership'
     return None
 
-# —— ML predictor fallback —— #
+#ML predictor fallback
 def predict_field(label_text):
     tensor = tf.convert_to_tensor([label_text])
     vect   = vectorizer(tensor)
@@ -212,7 +212,7 @@ def predict_field(label_text):
     idx    = np.argmax(preds, axis=1)
     return label_encoder.inverse_transform(idx)[0]
 
-# —— Robust click + type helper —— #
+#Robust click + type helper
 def click_and_type(elem, text, driver):
     try:
         elem.click()
@@ -226,7 +226,7 @@ def click_and_type(elem, text, driver):
     elem.send_keys(text)
     time.sleep(0.5)
 
-# —— Main Autofill Routine —— #
+#Main Autofill Routine
 def main():
     url = input("Enter the URL to autofill: ").strip()
     options = Options()
@@ -240,14 +240,14 @@ def main():
     inputs = driver.find_elements(By.TAG_NAME, 'input')
     for elem in inputs:
         try:
-            # skip non-interactable
+            #skip non-interactable
             if not elem.is_displayed() or not elem.is_enabled():
                 continue
             typ = (elem.get_attribute('type') or '').lower()
             if typ not in {'text','email','tel','url','number','search','password','file'}:
                 continue
 
-            # —— LABEL DETECTION —— #
+            #label detection
             label_text = ''
             try:
                 lbl = elem.find_element(By.XPATH, 'ancestor::label')
@@ -278,7 +278,7 @@ def main():
                 label_text = (elem.get_attribute('placeholder') or elem.get_attribute('aria-label') or '')
             if not label_text:
                 continue
-            # —— END LABEL DETECTION —— #
+            #END LABEL DETECTION
 
             key = heuristic_label(elem) or predict_field(label_text)
             print(f"Field: '{label_text}' → Key: {key}")
@@ -286,7 +286,7 @@ def main():
                 continue
             val = personal_info[key]
 
-            # fill
+            #fill
             if typ == 'file':
                 elem.send_keys(val)
             elif key == 'city':
